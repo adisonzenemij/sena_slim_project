@@ -153,13 +153,13 @@
             if ($valEmpt) { $message .= "$textInfo es obligatorio"; }
             if ($valEmpt) { $flag = true; }
             # Validar si existe informacion
-            /*if (!$flag) {
+            if (!$flag) {
                 # Funciones de validación para el campo del formulario
                 $valHour = $this->fnctAttribute->isValidTime($this->fdOsHour);
                 # Asignar mensaje segun validacion
                 if (!$flag && !$valHour) { $message .= "$textInfo es invalido"; }
                 if (!$flag && !$valHour) { $flag = true; }
-            }*/
+            }
             # Retornar el mensaje
             return $message;
         }
