@@ -12,11 +12,12 @@ Descripción breve del proyecto.
 
 1. Clona el repositorio: `git clone <URL_del_repositorio>`
 2. Instala las dependencias: `composer install`
-    composer require slim/slim
-    composer require slim/psr7
-    composer require slim/twig-view
-    composer require vlucas/phpdotenv
-    composer require firebase/php-jwt
+    `composer require slim/slim`
+    `composer require slim/psr7`
+    `composer require slim/twig-view`
+    `composer require vlucas/phpdotenv`
+    `composer require firebase/php-jwt`
+    `composer require --dev phpunit/phpunit:9.*`
 3. Configura la base de datos y otros ajustes si es necesario.
 
 ## Uso
