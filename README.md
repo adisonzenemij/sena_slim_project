@@ -46,3 +46,13 @@ Si deseas contribuir al proyecto, sigue estos pasos:
 ## Licencia
 
 Este proyecto está bajo la licencia [free]. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+
+# Pruebas Unitarias
+    Recomendaciones:
+        Driver: xdebug
+    Comandos: [
+        `./vendor/bin/phpunit`
+        `./vendor/bin/phpunit tests`
+        `./vendor/bin/phpunit --coverage-html coverage`
+        `./vendor/bin/phpunit --migrate-configuration`
+    ]
