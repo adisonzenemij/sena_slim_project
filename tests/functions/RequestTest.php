@@ -4,6 +4,14 @@
     namespace MyApp\Tests\Functions;
 
     use PHPUnit\Framework\TestCase;
+
+    use Psr\Http\Message\ResponseInterface as Response;
+    use Psr\Http\Message\ServerRequestInterface as Request;
+    use Psr\Http\Message\UriInterface;
+    use Psr\Http\Message\StreamInterface;
+
+    use Slim\Psr7\Factory\ServerRequestFactory;
+    use Slim\Psr7\Factory\ResponseFactory;
     
     use MyApp\Functions\RequestFunction as functionRequest;
 
@@ -22,7 +30,7 @@
                 ->withUri(new Uri('https://example.com/api'));
 
             // Llamar a la función jsonEncode y obtener el resultado
-            $result = JsonFunction::jsonEncode($response);
+            $result = functionRequest::jsonEncode($response);
 
             // Decodificar el resultado para verificar si es un JSON válido
             $decoded = json_decode($result);
@@ -53,7 +61,7 @@
             $data = '{"result": "success"}';
 
             // Llamar a la función jsonResult y obtener el resultado
-            $result = JsonFunction::jsonResult($response, $data);
+            $result = functionRequest::jsonResult($response, $data);
 
             // Decodificar el resultado para verificar si es un JSON válido
             $decoded = json_decode($result);

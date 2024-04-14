@@ -6,7 +6,7 @@
     use Slim\Views\Twig;
 
     class RootController {
-        function index(Request $request, Response $response, $arguments) {
+        public function index(Request $request, Response $response, $arguments) {
             # Parametros como argumentos en vistas
             $params = [
                 'appUrl' => SERVER_URL_CURRENT,
