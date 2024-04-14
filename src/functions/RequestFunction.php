@@ -14,6 +14,7 @@
             ];
             return json_encode($formated, JSON_PRETTY_PRINT);
         }
+        
         # Funcion para retornar valores formateados
         final public static function jsonResult($response, $data) {
             // Obtener información relevante de la solicitud
