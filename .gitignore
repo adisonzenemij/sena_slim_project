@@ -4,3 +4,5 @@
 
 /envs/.env
 /logs/
+
+phpunit.xml

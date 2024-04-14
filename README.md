@@ -52,6 +52,9 @@ Este proyecto está bajo la licencia [free]. Consulta el archivo [LICENSE](LICEN
         Driver: xdebug
     Comandos: [
         `./vendor/bin/phpunit --generate-configuration`
+        `./vendor/bin/phpunit --list-suites`
+        `./vendor/bin/phpunit --testsuite=unit`
+        `./vendor/bin/phpunit --testsuite=integration`
 
         `./vendor/bin/phpunit`
         `./vendor/bin/phpunit tests`
