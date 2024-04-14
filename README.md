@@ -51,8 +51,10 @@ Este proyecto está bajo la licencia [free]. Consulta el archivo [LICENSE](LICEN
     Recomendaciones:
         Driver: xdebug
     Comandos: [
+        `./vendor/bin/phpunit --generate-configuration`
+
         `./vendor/bin/phpunit`
         `./vendor/bin/phpunit tests`
-        `./vendor/bin/phpunit --coverage-html coverage`
+        `./vendor/bin/phpunit --coverage-html .coverages`
         `./vendor/bin/phpunit --migrate-configuration`
     ]

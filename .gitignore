@@ -1,5 +1,6 @@
 .coverages
 .scannerwork
+.phpunit.cache
 
 /envs/.env
 /logs/

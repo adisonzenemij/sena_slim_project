@@ -49,6 +49,7 @@ class ComposerStaticInit51f695f34259b7300a05d75ca9984455
         ),
         'M' => 
         array (
+            'MyApp\\Tests\\' => 12,
             'MyApp\\' => 6,
         ),
         'G' => 
@@ -140,6 +141,10 @@ class ComposerStaticInit51f695f34259b7300a05d75ca9984455
         'Neomerx\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/neomerx/cors-psr7/src',
+        ),
+        'MyApp\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'MyApp\\' => 
         array (

@@ -1,38 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
-    bootstrap="vendor/autoload.php"
-    executionOrder="depends,defects"
-    forceCoversAnnotation="false"
-    beStrictAboutCoversAnnotation="true"
-    beStrictAboutOutputDuringTests="true"
-    colors="true"
-    verbose="true"
->
-  <coverage includeUncoveredFiles="true">
-    <include>
-      <directory suffix=".php">src</directory>
-    </include>
-  </coverage>
-  <!-- beStrictAboutTodoAnnotatedTest="true" -->
-  <testsuites>
-    <testsuite name="application">
-      <directory suffix="Test.php">tests/application</directory>
-    </testsuite>
-    <testsuite name="email">
-      <directory suffix="Test.php">tests/email</directory>
-    </testsuite>
-    <testsuite name="system">
-      <directory suffix="Test.php">tests/system</directory>
-    </testsuite>
-    <testsuite name="technology">
-      <directory suffix="Test.php">tests/technology</directory>
-    </testsuite>
-    <testsuite name="user">
-      <directory suffix="Test.php">tests/user</directory>
-    </testsuite>
-  </testsuites>
-  <php>
-    <env name="APP_HOST" value="adisonjimenez.net"/>
-  </php>
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.6/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         cacheResultFile=".phpunit.cache/test-results"
+         executionOrder="depends,defects"
+         forceCoversAnnotation="true"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         convertDeprecationsToExceptions="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         colors="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="default">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage cacheDirectory=".phpunit.cache/code-coverage"
+              processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+    </coverage>
 </phpunit>
