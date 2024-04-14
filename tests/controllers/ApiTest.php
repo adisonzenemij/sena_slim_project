@@ -17,6 +17,29 @@
 
     class ApiTest extends TestCase {
         /**
+         * @covers MyApp\Controllers\ApiController::index
+        */
+        /*public function testIndex() : void {
+            // Crea una solicitud falsa
+            $requestFactory = new ServerRequestFactory();
+            $request = $requestFactory->createServerRequest(
+                'GET',
+                '/api',
+                []
+            );
+
+            // Crea una respuesta falsa
+            $responseFactory = new ResponseFactory();
+            $response = $responseFactory->createResponse();
+
+            // Llama al método index de ApiController con la solicitud y la respuesta falsas
+            $result = controllerApi::index($request, $response, '');
+
+            // Verifica que la respuesta tenga el encabezado 'Content-Type' esperado
+            $this->assertEquals('text/html; charset=UTF-8', $result->getHeaderLine('Content-Type'));
+        }*/
+
+        /**
          * @covers MyApp\Controllers\ApiController::param
         */
         public function testParam() : void {
@@ -25,14 +48,14 @@
             $request = $requestFactory->createServerRequest(
                 'GET',
                 '/api/param',
-                ['param1' => 'value1', 'param2' => 'value2']
+                []
             );
 
             // Crea una respuesta falsa
             $responseFactory = new ResponseFactory();
             $response = $responseFactory->createResponse();
 
-            // Llama al método param de ApiController con la solicitud y la respuesta falsas
+            // Llama al método con la solicitud y la respuesta falsas
             $result = controllerApi::param($request, $response, '');
 
             // Verifica que la respuesta tenga el encabezado 'Content-Type' esperado

@@ -37,5 +37,12 @@
 
     <php>
         <env name="APP_HOST" value="adisonjimenez.net"/>
+        <env name="SERVER_URL_CURRENT" value="http://127.0.0.1:8857/engines/github/adisonzenemij/sena_project_slim/api"/>
+        <env name="MYSQL_HOST" value="127.0.0.1" />
+        <env name="MYSQL_NAME" value="bd_sena_angular_project" />
+        <env name="MYSQL_PASS" value="root" />
+        <env name="MYSQL_PORT" value="3306" />
+        <env name="MYSQL_PROT" value="TCP" />
+        <env name="MYSQL_USER" value="root" />
     </php>
 </phpunit>
