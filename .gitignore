@@ -1,8 +1,15 @@
-.coverages
+# Sonar Qube
 .scannerwork
-.phpunit.cache
 
+# Variables Entorno
 /envs/.env
+
+# Composer
+/vendor/
+
+# Registros
 /logs/
 
+.coverages
+.phpunit.cache
 phpunit.xml

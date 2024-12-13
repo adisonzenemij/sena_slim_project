@@ -1,63 +1,64 @@
-# API SEVEN
+<h1 align="center">🔥 Proyecto Backend 🧑‍💻</h1>
 
-Descripción breve del proyecto.
+## Introducción
+
 
 ## Requisitos
+* Composer
+* PHP (Version 7)
+* MySQL (Version 8)
 
-- Requisitos del Entorno (PHP 7, MySQL).
-- Composer PATH (PHP 7)
-- Slim Framework Version 4
+## Instalación
+```yml
+Clonar Repostorio: git clone <project>
+```
+```yml
+Añadir Dependencias: composer require <dependency>
+Instalar Dependencias: composer install
+Actualizar Proyecto: composer dump-autoload
+```
 
 ## Configuración
+```yml
+Environment: composer require vlucas/phpdotenv
+JWT: composer require firebase/php-jwt
+Slim: composer require slim/slim
+Slim: composer require slim/psr7
+Slim: composer require slim/twig-view
+Cors: composer require tuupola/cors-middleware
+```
 
-1. Clona el repositorio: `git clone <URL_del_repositorio>`
-2. Instala las dependencias: `composer install`
-    `composer require slim/slim`
-    `composer require slim/psr7`
-    `composer require slim/twig-view`
-    `composer require vlucas/phpdotenv`
-    `composer require firebase/php-jwt`
-    `composer require --dev phpunit/phpunit:9.*`
-3. Configura la base de datos y otros ajustes si es necesario.
+## Variables Entorno
+```yml
+### Configuración Básica ###
+APP_PROJECT: Nombre del proyecto
+APP_FRAMEWORK: Framework utilizado [none | other]
+APP_VERSION: Versión de la aplicación
+APP_DEBUG: Depuración activada [true | false]
+```
 
-## Uso
+## Pruebas Unitarias
+```yml
+Driver: xdebug
+Comandos:
+    `./vendor/bin/phpunit --generate-configuration`
+    `./vendor/bin/phpunit --list-suites`
+    `./vendor/bin/phpunit --testsuite=unit`
+    `./vendor/bin/phpunit --testsuite=integration`
 
+    `./vendor/bin/phpunit`
+    `./vendor/bin/phpunit tests`
+    `./vendor/bin/phpunit --coverage-html .coverages`
+    `./vendor/bin/phpunit --migrate-configuration`
+```
 
-
-## Estructura del Proyecto
-
-
-
-## Contribución
-
-Si deseas contribuir al proyecto, sigue estos pasos:
-
-1. Crea un proyecto del repositorio.
-2. Clona tu proyecto: `git clone <URL_de_tu_proyecto>`
-3. Crea una rama para tu característica o corrección: `git checkout -b main`
-4. Realiza tus cambios y realiza commits: `git commit -m "Descripción de tus cambios"`
-5. Empuja tus cambios a tu proyecto: `git push origin main`
-6. Abre una solicitud de extracción (PR) en el repositorio principal.
-
-## Información Adicional
-
-
-
-## Licencia
-
-Este proyecto está bajo la licencia [free]. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
-
-# Pruebas Unitarias
-    Recomendaciones:
-        Driver: xdebug
-    Comandos: [
-        `./vendor/bin/phpunit --generate-configuration`
-        `./vendor/bin/phpunit --list-suites`
-        `./vendor/bin/phpunit --testsuite=unit`
-        `./vendor/bin/phpunit --testsuite=integration`
-
-        `./vendor/bin/phpunit`
-        `./vendor/bin/phpunit tests`
-        `./vendor/bin/phpunit --coverage-html .coverages`
-        `./vendor/bin/phpunit --migrate-configuration`
-    ]
+## Páginas Oficiales
+<div align="center">
+    <a href="https://www.adisonjimenez.net" target="_blank">
+        <span>Web Principal 🌐</span>
+    </a>
+    |
+    <a href="https://www.engsoft.app" target="_blank">
+        <span>Web Desarrollo 💻</span>
+    </a>
+</div>

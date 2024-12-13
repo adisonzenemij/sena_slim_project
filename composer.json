@@ -1,11 +1,11 @@
 {
     "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "firebase/php-jwt": "^6.9",
         "slim/slim": "^4.12",
         "slim/psr7": "^1.6",
         "slim/twig-view": "^3.3",
-        "tuupola/cors-middleware": "^1.4",
-        "vlucas/phpdotenv": "^5.6",
-        "firebase/php-jwt": "^6.9"
+        "tuupola/cors-middleware": "^1.4"
     },
     "autoload": {
         "psr-4": {
